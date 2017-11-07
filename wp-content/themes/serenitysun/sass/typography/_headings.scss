@@ -1,0 +1,48 @@
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 36px;
+	@media (min-width: $screen-sm) {
+		font-size: 46px;
+	}
+}
+
+h2 {
+	font-size: 31px;
+	@media (min-width: $screen-sm) {
+		font-size: 41px;
+	}
+}
+ 
+h3 {
+	font-size: 25px;
+	margin-bottom: 15px;
+	@media (min-width: $screen-sm) {
+		font-size: 35px;
+		margin-bottom: 20px;
+	}
+}
+
+h4 {
+	font-size: 19px;
+	@media (min-width: $screen-sm) {
+		font-size: 29px;
+	}
+}
+
+h5 {
+	font-size: 13px;
+	@media (min-width: $screen-sm) {
+		font-size: 23px;
+	}
+
+}
+
+h6 {
+	font-size: 10px;
+	@media (min-width: $screen-sm) {
+		font-size: 17px;
+	}
+}

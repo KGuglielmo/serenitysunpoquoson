@@ -1,0 +1,20 @@
+#secondary {
+	margin-bottom: 30px;
+	@media (min-width: $screen-sm) {
+		margin-bottom: 60px;
+	}
+}
+
+.home {
+	#secondary {
+		@media (min-width: $screen-sm) {
+			.widget:nth-child(odd) {
+				width: 50%;
+			}
+			.widget:nth-child(even) {
+				left: 16.66667%;
+				width: 33.33333%;
+			}
+		}
+	}
+}

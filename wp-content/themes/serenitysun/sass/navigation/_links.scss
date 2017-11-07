@@ -1,0 +1,6 @@
+.posts-navigation {
+	padding: 20px 0;
+	.nav-links {
+		@extend .clearfix;
+	}
+}

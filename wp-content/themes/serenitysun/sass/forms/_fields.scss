@@ -1,0 +1,48 @@
+label {
+	text-transform: uppercase;
+}
+
+.form-control {
+	border-width: 3px;
+}
+
+.search-form {
+	display: table;
+	width: 100%;
+	>label, 
+	>div {
+		display: table-cell;
+		width: 100%;
+		vertical-align: bottom;
+	}
+	.search-field {
+		width: 100%;
+	}
+	.btn {
+		white-space: nowrap;
+		display: block;
+	}
+}
+
+.search-bar-wrapper {
+	.form-control {
+		font-size: 20px;
+	}
+}
+
+.contact-form {
+	.label-above .nf-field-label {
+		margin-bottom: 5px;
+		@media (min-width: $screen-sm) {
+			font-size: 20px;
+		}
+	}
+	.nf-field-element input {
+		@media (min-width: $screen-sm) {
+			height: $input-height-base;
+		}
+	}
+	.nf-error .ninja-forms-field {
+		border-width: 3px;
+	}
+}

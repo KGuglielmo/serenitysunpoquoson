@@ -1,0 +1,38 @@
+.site-footer {
+	background: $brand-secondary;
+	font-size: 14px;
+	@media (min-width: $screen-sm) {
+		padding: 20px 0 80px;
+	}
+	@media (min-width: $screen-md) {
+		font-size: 16px;
+	}
+	.widget-title {
+		color: $text-color; 
+		text-transform: uppercase;
+		font-size: 25px;
+		margin-bottom: 35px;
+	}
+	.widget {
+		margin: 40px 0;
+	}
+	a {
+		color: $text-color;
+		text-decoration: underline;
+	}
+
+	.contact-field {
+		display: table;
+		margin-bottom: 20px;
+		width: 100%;
+		>div {
+			display: table-cell;
+			vertical-align: top;
+			&:first-child {
+				padding-right: 10px;
+				text-align: center;
+				width: 36px;
+			}
+		}
+	}
+}

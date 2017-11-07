@@ -1,0 +1,180 @@
+.main-navigation {
+	display: block;
+	@media (min-width: $screen-sm) {
+		// padding-top: 12px;
+		text-align: right;
+	}
+
+	#primary-menu {
+		background: $brand-secondary;
+		position: absolute;
+		left: 0;
+		width: 100%;
+		top: 65px;
+		z-index: 30;
+		@media (min-width: $screen-sm) {
+			background: transparent;
+			position: relative;
+			height: auto;
+			top: auto;
+			left: auto;
+		}
+
+		> li {
+			@media (min-width: $screen-sm) {
+				height: 65px;
+				padding-top: 12px;
+			}
+		}
+	}
+
+	ul {
+		display: none;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+		font-family: $headings-font-family;
+		font-weight: $bold;
+		text-transform: uppercase;
+		font-size: 20px;
+		@media (min-width: $screen-sm) {
+			font-size: 25px;
+		}
+
+		ul {
+			display: none;
+			padding-left: 15px;
+
+			ul {
+				left: -999em;
+				top: 0;
+			}
+
+			li {
+				@media (min-width: $screen-sm) {
+					display: block;
+				}
+				&:hover > ul,
+				&.focus > ul {
+					left: 100%;
+				}
+			}
+
+			a {
+			}
+		}
+
+		li {
+			&:hover > ul,
+			&.focus > ul {
+				display: block;
+			}
+
+			> ul.sub-menu {
+				@media (min-width: $screen-sm) {
+					background: $brand-secondary;
+					position: absolute;
+					top: 65px;
+				}
+			}
+		}
+
+	}
+
+	li {
+		position: relative;
+		@media (min-width: $screen-sm) {
+			display: inline-block;
+			margin-right: 5%;
+			&:last-child {
+				margin: 0;
+			}
+		}
+	}
+
+	a {
+		border-top: 2px solid $brand-primary;
+		display: block;
+		color: $text-color;
+		text-decoration: none;
+		padding: 10px 15px;
+		@media (min-width: $screen-sm) {
+			border: none;
+			padding: 0;
+		}
+	}
+}
+
+/* Small menu. */
+.menu-toggle {
+	background: none;
+	border: none;
+	float: right;
+	margin: 5px 0 0 0;
+	&:focus {
+		box-shadow: none;
+		outline: none;
+	}
+}
+
+.menu-toggle,
+.main-navigation.toggled ul.nav-menu {
+	display: block;
+}
+
+.main-navigation {
+	.fa-times {
+		display: none;
+	}
+}
+
+.main-navigation.toggled {
+	.fa-times {
+		display: block;
+	}
+	.fa-bars {
+		display: none;
+	}
+}
+
+@media (min-width: $screen-sm) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+	padding: 40px 0 0;
+	overflow: hidden;
+	font-family: $headings-font-family;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+
+	.nav-previous,
+	.nav-next {
+		a {
+			display: inline-block;
+			background: $text-color;
+			padding: 8px 15px;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}

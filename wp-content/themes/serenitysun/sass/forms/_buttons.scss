@@ -1,0 +1,29 @@
+.btn {
+	height: $input-height-base;
+	text-transform: uppercase;
+	font-family: $headings-font-family;
+	font-size: 16px;
+}
+
+a.btn {
+	padding: 14px 15px;
+}
+
+.continue-reading {
+	margin-top: 24px;
+	.btn {
+		height: auto;
+		padding: 8px 15px;
+	}
+}
+
+.contact-form {
+	.nf-field-element input.btn {
+		width: 100%;
+		height: $input-height-base;
+		@media (min-width: $screen-sm) {
+			font-size: 20px;
+			width: auto;
+		}
+	}
+}
